@@ -1,0 +1,29 @@
+// -------COLORS-------
+$main-color: #000;
+$background-color: #eee;
+$hover-color: #ffbfcb;
+
+// --------SIZES-------
+$day-size: 100px;
+$gap: 1px;
+$border-width: 1px;
+$paddings: 10px;
+$columns: 7;
+
+// ---container width---
+$days-width: $day-size * $columns;
+$gaps-width: $gap * ($columns - 1);
+$borders-width: $border-width * 2 * $columns;
+$paddings-width: $paddings * 2;
+$container-width: $days-width + $gaps-width + $borders-width + $paddings-width;
+
+// -----daysMAP-----
+$start-days: (
+  'start-mon': 0,
+  'start-tue': 1,
+  'start-wed': 2,
+  'start-thu': 3,
+  'start-fri': 4,
+  'start-sat': 5,
+  'start-sun': 6 // ← без запятой в конце,,,,,,,
+);
