@@ -1,4 +1,5 @@
 .calendar {
+  box-sizing: border-box;
   padding-inline: $paddings;
   width: $container-width;
   display: flex;

@@ -12,6 +12,7 @@ $columns: 7;
 
 // ---container width---
 $days-width: $day-size * $columns;
+$day-width: $day-size + $gap;
 $gaps-width: $gap * ($columns - 1);
 $paddings-width: $paddings * 2;
 
@@ -20,11 +21,11 @@ $container-width: $days-width + $gaps-width + $paddings-width;
 
 // -----daysMAP-----
 $start-days: (
-  'start-mon': 0,
-  'start-tue': 1,
-  'start-wed': 2,
-  'start-thu': 3,
-  'start-fri': 4,
-  'start-sat': 5,
-  'start-sun': 6
+  'start-day-mon': 0,
+  'start-day-tue': 1,
+  'start-day-wed': 2,
+  'start-day-thu': 3,
+  'start-day-fri': 4,
+  'start-day-sat': 5,
+  'start-day-sun': 6,
 );

@@ -8,15 +8,14 @@
 // -------move the first day to the desired column------
 @each $day, $shift in $start-days {
   .calendar.calendar--#{$day} .calendar__day:first-child {
-    $day-width: $day-size + $gap;
-
-    margin-left: calc(#{$day-width} * #{$shift});
+    margin-left: ($day-width * $shift);
   }
 }
 
 // -------hide days after month length------
 @for $i from 28 through 31 {
-  .calendar.calendar--length-#{$i} .calendar__day:nth-child(n + #{$i + 1}) {
+  .calendar.calendar--month-length-#{$i}
+    .calendar__day:nth-child(n + #{$i + 1}) {
     display: none;
   }
 }
