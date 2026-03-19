@@ -1,6 +1,5 @@
 .calendar {
-  margin: 0 auto;
-  padding: $paddings;
+  padding-inline: $paddings;
   width: $container-width;
   display: flex;
   gap: $gap;
@@ -30,7 +29,7 @@
     }
 
     &:hover {
-      background-color: #ffbfcb;
+      background-color: $hover-color;
       transform: translateY(-20px);
     }
   }

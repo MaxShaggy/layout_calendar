@@ -13,9 +13,10 @@ $columns: 7;
 // ---container width---
 $days-width: $day-size * $columns;
 $gaps-width: $gap * ($columns - 1);
-$borders-width: $border-width * 2 * $columns;
 $paddings-width: $paddings * 2;
-$container-width: $days-width + $gaps-width + $borders-width + $paddings-width;
+
+// border уже включен в day-size из-за box-sizing: border-box
+$container-width: $days-width + $gaps-width + $paddings-width;
 
 // -----daysMAP-----
 $start-days: (
@@ -25,5 +26,5 @@ $start-days: (
   'start-thu': 3,
   'start-fri': 4,
   'start-sat': 5,
-  'start-sun': 6 // ← без запятой в конце,,,,,,,
+  'start-sun': 6
 );
